@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1">
+  <file datatype="php" original="contao/languages/en/tl_requests.php" source-language="en">
+    <body>
+      <trans-unit id="tl_requests.name.0">
+        <source>Name</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.name.1">
+        <source>Please enter the customer name.</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.phone.0">
+        <source>Phone number</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.phone.1">
+        <source>Phone number of customer</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.date.0">
+        <source>Date</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.date.1">
+        <source></source>
+      </trans-unit>
+      <trans-unit id="tl_requests.time.0">
+        <source>Time</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.time.1">
+        <source></source>
+      </trans-unit>
+      <trans-unit id="tl_requests.referer.0">
+        <source>Referer URL</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.referer.1">
+        <source></source>
+      </trans-unit>
+      <trans-unit id="tl_requests.priority.0">
+        <source>Priority</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.priority.1">
+        <source></source>
+      </trans-unit>
+      <trans-unit id="tl_requests.subject.0">
+        <source>Subject</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.subject.1">
+        <source></source>
+      </trans-unit>
+      <trans-unit id="tl_requests.message.0">
+        <source>Message</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.message.1">
+        <source></source>
+      </trans-unit>
+      <trans-unit id="tl_requests.cultivation.0">
+        <source>Cultivation</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.cultivation.1">
+        <source></source>
+      </trans-unit>
+      <trans-unit id="tl_requests.irrigation.0">
+        <source>Irrigation</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.irrigation.1">
+        <source></source>
+      </trans-unit>
+      <trans-unit id="tl_requests.cultivatedarea.0">
+        <source>Cultivated Area</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.cultivatedarea.1">
+        <source></source>
+      </trans-unit>
+      <trans-unit id="tl_requests.unit.0">
+        <source>Unit</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.unit.1">
+        <source></source>
+      </trans-unit>
+      <trans-unit id="tl_requests.name_legend">
+        <source>Customer</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.datetime_legend">
+        <source>Date and Time</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.message_legend">
+        <source>Problem and message</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.cultivation_legend">
+        <source>Cultivation propertise</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.new.0">
+        <source>New request</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.new.1">
+        <source>Create a new request</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.show">
+        <source>Show the details of request ID %s</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.edit">
+        <source>Edit request ID %s</source>
+      </trans-unit>
+      <trans-unit id="tl_requests.delete">
+        <source>Delete request ID %s</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

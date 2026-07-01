@@ -2,10 +2,18 @@
 
 declare(strict_types=1);
 
+/*
+ * This file is part of Contao Vatan Bundle.
+ *
+ * (c) Hamid Peywasti 2026 <hamid@respinar.com>
+ *
+ * @license MIT
+ */
+
 namespace Respinar\ContaoVatanBundle\EventListener;
 
-use Contao\CoreBundle\ServiceAnnotation\Hook;
 use Contao\CalendarEventsModel;
+use Contao\CoreBundle\ServiceAnnotation\Hook;
 use Contao\Events;
 
 /**
@@ -13,9 +21,8 @@ use Contao\Events;
  */
 class UpComingEventInsertTagListener
 {
-
     private const SUPPORTED_TAGS = [
-        'upcomingevent_url'
+        'upcomingevent_url',
     ];
 
     /**
@@ -23,30 +30,26 @@ class UpComingEventInsertTagListener
      */
     public function __invoke(string $tag)
     {
-
         $elements = explode('::', $tag);
         $key = strtolower($elements[0]);
-        
 
         if (\in_array($key, self::SUPPORTED_TAGS, true)) {
             return $this->replaceEventInsertTag($key, $elements[1]);
         }
-        
+
         return false;
     }
 
     private function replaceEventInsertTag(string $insertTag, string $pidOrAlias)
     {
-
-        if ( $insertTag != "upcomingevent_url") {
+        if ('upcomingevent_url' !== $insertTag) {
             return false;
         }
 
-        if (null === ($model = CalendarEventsModel::findUpcomingByPids(array($pidOrAlias)))) {
+        if (null === ($model = CalendarEventsModel::findUpcomingByPids([$pidOrAlias]))) {
             return '';
         }
 
         return Events::generateEventUrl($model);
-
     }
 }

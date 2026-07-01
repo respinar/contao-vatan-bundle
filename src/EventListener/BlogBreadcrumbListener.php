@@ -2,6 +2,14 @@
 
 declare(strict_types=1);
 
+/*
+ * This file is part of Contao Vatan Bundle.
+ *
+ * (c) Hamid Peywasti 2026 <hamid@respinar.com>
+ *
+ * @license MIT
+ */
+
 namespace Respinar\ContaoVatanBundle\EventListener;
 
 use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;

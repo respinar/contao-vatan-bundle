@@ -1,13 +1,15 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of Contao Vatan Bundle.
  *
- * (c) Hamid Peywasti 2023 <hamid@respinar.com>
+ * (c) Hamid Peywasti 2026 <hamid@respinar.com>
  *
  * @license MIT
  */
 
-$GLOBALS['BE_MOD']['vatan']['requests']= array(
-		'tables' => array('tl_requests')
-	);
+$GLOBALS['BE_MOD']['vatan']['requests'] = [
+    'tables' => ['tl_vatan_requests'],
+];

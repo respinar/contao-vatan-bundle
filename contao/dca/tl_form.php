@@ -1,6 +1,8 @@
 <?php
 
-$GLOBALS['TL_DCA']['tl_form']['fields']['targetTable']['options'][] = 'tl_requests';
-$GLOBALS['TL_DCA']['tl_form']['fields']['targetTable']['options'][] = 'form_orders';
-$GLOBALS['TL_DCA']['tl_form']['fields']['targetTable']['options'][] = 'form_registration';
-$GLOBALS['TL_DCA']['tl_form']['fields']['targetTable']['options'][] = 'form_webinar';
+declare(strict_types=1);
+
+$GLOBALS['TL_DCA']['tl_form']['fields']['targetTable']['options'][] = 'tl_vatan_requests';
+$GLOBALS['TL_DCA']['tl_form']['fields']['targetTable']['options'][] = 'tl_vatan_orders';
+$GLOBALS['TL_DCA']['tl_form']['fields']['targetTable']['options'][] = 'tl_vatan_registration';
+$GLOBALS['TL_DCA']['tl_form']['fields']['targetTable']['options'][] = 'tl_vatan_webinar';

@@ -5,7 +5,7 @@ declare(strict_types=1);
 /*
  * This file is part of Contao Vatan Bundle.
  *
- * (c) Hamid Peywasti 2026 <hamid@respinar.com>
+ * (c) Hamid Peywasti
  *
  * @license MIT
  */
@@ -38,7 +38,6 @@ class InitializeSystemListener
             return;
         }
 
-        // $GLOBALS['TL_JAVASCRIPT'][] = $this->packages->getUrl('main.js', 'respinar_products');
         $GLOBALS['TL_CSS'][] = $this->packages->getUrl('css/backend.css', 'contao_vatan');
     }
 }

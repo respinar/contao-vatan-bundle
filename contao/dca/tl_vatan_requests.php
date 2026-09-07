@@ -11,7 +11,7 @@ declare(strict_types=1);
  */
 
 /*
- * Table tl_requests
+ * Table tl_vatan_requests
  */
 
 use Contao\DataContainer;
@@ -23,7 +23,6 @@ $GLOBALS['TL_DCA']['tl_vatan_requests'] =
     'config' => [
         'dataContainer' => DC_Table::class,
         'closed' => true,
-        // 'notEditable'                 => true,
         'notCopyable' => true,
         'sql' => [
             'keys' => [

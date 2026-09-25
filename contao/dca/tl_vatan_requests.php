@@ -53,78 +53,136 @@ $GLOBALS['TL_DCA']['tl_vatan_requests'] =
     // Fields
     'fields' => [
         'id' => [
-            'sql' => 'int(10) unsigned NOT NULL auto_increment',
+            'sql' => [
+                'type' => 'integer',
+                'autoincrement' => true,
+                'notnull' => true,
+            ],
         ],
         'tstamp' => [
             'filter' => true,
             'sorting' => true,
             'flag' => DataContainer::SORT_DAY_DESC,
-            'sql' => 'int(10) unsigned NOT NULL default 0',
+            'sql' => [
+                'type' => 'integer',
+                'notnull' => true,
+                'default' => 0,
+            ],
         ],
         'name' => [
             'inputType' => 'text',
             'eval' => ['maxlength' => 255, 'tl_class' => 'w50'],
-            'sql' => 'varchar(255) NOT NULL',
+            'sql' => [
+                'type' => 'string',
+                'length' => 255,
+                'notnull' => true,
+            ],
         ],
         'phone' => [
             'inputType' => 'text',
             'eval' => ['maxlength' => 255, 'tl_class' => 'w50'],
-            'sql' => 'varchar(255) NOT NULL',
+            'sql' => [
+                'type' => 'string',
+                'length' => 255,
+                'notnull' => true,
+            ],
         ],
         'message' => [
             'inputType' => 'textarea',
             'eval' => ['tl_class' => 'clr'],
-            'sql' => 'text NOT NULL',
+            'sql' => [
+                'type' => 'text',
+                'notnull' => true,
+            ],
         ],
         'date' => [
             'inputType' => 'text',
             'eval' => ['tl_class' => 'w50'],
-            'sql' => 'varchar(50) NOT NULL',
+            'sql' => [
+                'type' => 'string',
+                'length' => 50,
+                'notnull' => true,
+            ],
         ],
         'time' => [
             'inputType' => 'text',
             'eval' => ['tl_class' => 'w50'],
-            'sql' => 'varchar(5) DEFAULT NULL',
+            'sql' => [
+                'type' => 'string',
+                'length' => 5,
+                'default' => null,
+            ],
         ],
         'referer' => [
             'inputType' => 'text',
             'eval' => ['tl_class' => 'w50'],
-            'sql' => 'varchar(255) NOT NULL',
+            'sql' => [
+                'type' => 'string',
+                'length' => 255,
+                'notnull' => true,
+            ],
         ],
         'cultivation' => [
             'inputType' => 'text',
             'eval' => ['tl_class' => 'w50'],
-            'sql' => 'varchar(255) DEFAULT NULL',
+            'sql' => [
+                'type' => 'string',
+                'length' => 255,
+                'default' => null,
+            ],
         ],
         'subject' => [
             'inputType' => 'text',
             'eval' => ['tl_class' => 'w50'],
-            'sql' => 'varchar(255) DEFAULT NULL',
+            'sql' => [
+                'type' => 'string',
+                'length' => 255,
+                'default' => null,
+            ],
         ],
         'order' => [
             'inputType' => 'text',
             'eval' => ['tl_class' => 'w50'],
-            'sql' => 'varchar(255) DEFAULT NULL',
+            'sql' => [
+                'type' => 'string',
+                'length' => 255,
+                'default' => null,
+            ],
         ],
         'cultivatedarea' => [
             'inputType' => 'text',
             'eval' => ['tl_class' => 'w50'],
-            'sql' => 'varchar(255) DEFAULT NULL',
+            'sql' => [
+                'type' => 'string',
+                'length' => 255,
+                'default' => null,
+            ],
         ],
         'unit' => [
             'inputType' => 'text',
             'eval' => ['tl_class' => 'w50'],
-            'sql' => 'varchar(255) DEFAULT NULL',
+            'sql' => [
+                'type' => 'string',
+                'length' => 255,
+                'default' => null,
+            ],
         ],
         'irrigation' => [
             'inputType' => 'text',
             'eval' => ['tl_class' => 'w50'],
-            'sql' => 'int(10) default NULL',
+            'sql' => [
+                'type' => 'integer',
+                'default' => null,
+            ],
         ],
         'priority' => [
             'inputType' => 'text',
             'eval' => ['tl_class' => 'w50'],
-            'sql' => 'varchar(255) DEFAULT NULL',
+            'sql' => [
+                'type' => 'string',
+                'length' => 255,
+                'default' => null,
+            ],
         ],
     ],
 ];

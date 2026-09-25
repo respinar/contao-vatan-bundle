@@ -55,8 +55,8 @@ $GLOBALS['TL_DCA']['tl_vatan_orders'] =
         'id' => [
             'sql' => [
                 'type' => 'integer',
+                'unsigned' => true,
                 'autoincrement' => true,
-                'notnull' => true,
             ],
         ],
         'tstamp' => [
@@ -65,7 +65,7 @@ $GLOBALS['TL_DCA']['tl_vatan_orders'] =
             'flag' => DataContainer::SORT_DAY_DESC,
             'sql' => [
                 'type' => 'integer',
-                'notnull' => true,
+                'unsigned' => true,
                 'default' => 0,
             ],
         ],
@@ -75,7 +75,7 @@ $GLOBALS['TL_DCA']['tl_vatan_orders'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
-                'notnull' => true,
+                'default' => '',
             ],
         ],
         'phone' => [
@@ -84,7 +84,7 @@ $GLOBALS['TL_DCA']['tl_vatan_orders'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 20,
-                'notnull' => true,
+                'default' => '',
             ],
         ],
         'product' => [
@@ -93,47 +93,52 @@ $GLOBALS['TL_DCA']['tl_vatan_orders'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
-                'notnull' => true,
+                'default' => '',
             ],
         ],
         'qty' => [
             'inputType' => 'text',
-            'eval' => ['maxlength' => 10, 'tl_class' => 'w50'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'integer',
-                'notnull' => true,
+                'unsigned' => true,
+                'default' => 0,
             ],
         ],
         'qty_npk_1' => [
             'inputType' => 'text',
-            'eval' => ['maxlength' => 10, 'tl_class' => 'w50'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'integer',
-                'notnull' => true,
+                'unsigned' => true,
+                'default' => 0,
             ],
         ],
         'qty_npk_2' => [
             'inputType' => 'text',
-            'eval' => ['maxlength' => 10, 'tl_class' => 'w50'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'integer',
-                'notnull' => true,
+                'unsigned' => true,
+                'default' => 0,
             ],
         ],
         'qty_npk_3' => [
             'inputType' => 'text',
-            'eval' => ['maxlength' => 10, 'tl_class' => 'w50'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'integer',
-                'notnull' => true,
+                'unsigned' => true,
+                'default' => 0,
             ],
         ],
         'qty_npk_4' => [
             'inputType' => 'text',
-            'eval' => ['maxlength' => 10, 'tl_class' => 'w50'],
+            'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'integer',
-                'notnull' => true,
+                'unsigned' => true,
+                'default' => 0,
             ],
         ],
         'description' => [
@@ -141,7 +146,7 @@ $GLOBALS['TL_DCA']['tl_vatan_orders'] =
             'eval' => ['tl_class' => 'clr'],
             'sql' => [
                 'type' => 'text',
-                'notnull' => true,
+                'notnull' => false,
             ],
         ],
         'address' => [
@@ -150,7 +155,7 @@ $GLOBALS['TL_DCA']['tl_vatan_orders'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
-                'notnull' => true,
+                'default' => '',
             ],
         ],
         'date' => [
@@ -159,7 +164,7 @@ $GLOBALS['TL_DCA']['tl_vatan_orders'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 50,
-                'notnull' => true,
+                'default' => '',
             ],
         ],
         'referer' => [
@@ -168,7 +173,7 @@ $GLOBALS['TL_DCA']['tl_vatan_orders'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
-                'notnull' => true,
+                'default' => '',
             ],
         ],
     ],

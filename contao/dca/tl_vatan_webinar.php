@@ -55,8 +55,8 @@ $GLOBALS['TL_DCA']['tl_vatan_webinar'] =
         'id' => [
             'sql' => [
                 'type' => 'integer',
+                'unsigned' => true,
                 'autoincrement' => true,
-                'notnull' => true,
             ],
         ],
         'tstamp' => [
@@ -65,7 +65,7 @@ $GLOBALS['TL_DCA']['tl_vatan_webinar'] =
             'flag' => DataContainer::SORT_DAY_DESC,
             'sql' => [
                 'type' => 'integer',
-                'notnull' => true,
+                'unsigned' => true,
                 'default' => 0,
             ],
         ],
@@ -75,7 +75,7 @@ $GLOBALS['TL_DCA']['tl_vatan_webinar'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
-                'notnull' => true,
+                'default' => '',
             ],
         ],
         'phone' => [
@@ -84,7 +84,7 @@ $GLOBALS['TL_DCA']['tl_vatan_webinar'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
-                'notnull' => true,
+                'default' => '',
             ],
         ],
         'webniar' => [
@@ -93,7 +93,7 @@ $GLOBALS['TL_DCA']['tl_vatan_webinar'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
-                'notnull' => true,
+                'default' => '',
             ],
         ],
         'date' => [
@@ -102,7 +102,7 @@ $GLOBALS['TL_DCA']['tl_vatan_webinar'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
-                'notnull' => true,
+                'default' => '',
             ],
         ],
         'referer' => [
@@ -111,7 +111,7 @@ $GLOBALS['TL_DCA']['tl_vatan_webinar'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
-                'notnull' => true,
+                'default' => '',
             ],
         ],
     ],

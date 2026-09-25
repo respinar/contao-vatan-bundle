@@ -55,8 +55,8 @@ $GLOBALS['TL_DCA']['tl_vatan_registration'] =
         'id' => [
             'sql' => [
                 'type' => 'integer',
+                'unsigned' => true,
                 'autoincrement' => true,
-                'notnull' => true,
             ],
         ],
         'tstamp' => [
@@ -65,7 +65,7 @@ $GLOBALS['TL_DCA']['tl_vatan_registration'] =
             'flag' => DataContainer::SORT_DAY_DESC,
             'sql' => [
                 'type' => 'integer',
-                'notnull' => true,
+                'unsigned' => true,
                 'default' => 0,
             ],
         ],
@@ -75,7 +75,7 @@ $GLOBALS['TL_DCA']['tl_vatan_registration'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
-                'notnull' => true,
+                'default' => '',
             ],
         ],
         'phone' => [
@@ -84,7 +84,7 @@ $GLOBALS['TL_DCA']['tl_vatan_registration'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
-                'notnull' => true,
+                'default' => '',
             ],
         ],
         'course' => [
@@ -93,7 +93,7 @@ $GLOBALS['TL_DCA']['tl_vatan_registration'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
-                'notnull' => true,
+                'default' => '',
             ],
         ],
         'message' => [
@@ -101,7 +101,7 @@ $GLOBALS['TL_DCA']['tl_vatan_registration'] =
             'eval' => ['tl_class' => 'clr'],
             'sql' => [
                 'type' => 'text',
-                'notnull' => true,
+                'notnull' => false,
             ],
         ],
         'date' => [
@@ -110,7 +110,7 @@ $GLOBALS['TL_DCA']['tl_vatan_registration'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 50,
-                'notnull' => true,
+                'default' => '',
             ],
         ],
         'referer' => [
@@ -119,7 +119,7 @@ $GLOBALS['TL_DCA']['tl_vatan_registration'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
-                'notnull' => true,
+                'default' => '',
             ],
         ],
     ],

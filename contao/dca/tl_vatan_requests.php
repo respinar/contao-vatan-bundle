@@ -55,8 +55,8 @@ $GLOBALS['TL_DCA']['tl_vatan_requests'] =
         'id' => [
             'sql' => [
                 'type' => 'integer',
+                'unsigned' => true,
                 'autoincrement' => true,
-                'notnull' => true,
             ],
         ],
         'tstamp' => [
@@ -65,7 +65,7 @@ $GLOBALS['TL_DCA']['tl_vatan_requests'] =
             'flag' => DataContainer::SORT_DAY_DESC,
             'sql' => [
                 'type' => 'integer',
-                'notnull' => true,
+                'unsigned' => true,
                 'default' => 0,
             ],
         ],
@@ -75,7 +75,7 @@ $GLOBALS['TL_DCA']['tl_vatan_requests'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
-                'notnull' => true,
+                'default' => '',
             ],
         ],
         'phone' => [
@@ -84,7 +84,7 @@ $GLOBALS['TL_DCA']['tl_vatan_requests'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
-                'notnull' => true,
+                'default' => '',
             ],
         ],
         'message' => [
@@ -92,7 +92,7 @@ $GLOBALS['TL_DCA']['tl_vatan_requests'] =
             'eval' => ['tl_class' => 'clr'],
             'sql' => [
                 'type' => 'text',
-                'notnull' => true,
+                'notnull' => false,
             ],
         ],
         'date' => [
@@ -101,7 +101,7 @@ $GLOBALS['TL_DCA']['tl_vatan_requests'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 50,
-                'notnull' => true,
+                'default' => '',
             ],
         ],
         'time' => [
@@ -110,7 +110,7 @@ $GLOBALS['TL_DCA']['tl_vatan_requests'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 5,
-                'default' => null,
+                'default' => '',
             ],
         ],
         'referer' => [
@@ -119,16 +119,15 @@ $GLOBALS['TL_DCA']['tl_vatan_requests'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
-                'notnull' => true,
+                'default' => '',
             ],
         ],
         'cultivation' => [
-            'inputType' => 'text',
-            'eval' => ['tl_class' => 'w50'],
+            'inputType' => 'textarea',
+            'eval' => ['tl_class' => 'clr'],
             'sql' => [
-                'type' => 'string',
-                'length' => 255,
-                'default' => null,
+                'type' => 'text',
+                'notnull' => false,
             ],
         ],
         'subject' => [
@@ -137,7 +136,7 @@ $GLOBALS['TL_DCA']['tl_vatan_requests'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
-                'default' => null,
+                'default' => '',
             ],
         ],
         'cultivatedarea' => [
@@ -146,7 +145,7 @@ $GLOBALS['TL_DCA']['tl_vatan_requests'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
-                'default' => null,
+                'default' => '',
             ],
         ],
         'unit' => [
@@ -155,7 +154,7 @@ $GLOBALS['TL_DCA']['tl_vatan_requests'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
-                'default' => null,
+                'default' => '',
             ],
         ],
         'irrigation' => [
@@ -163,7 +162,8 @@ $GLOBALS['TL_DCA']['tl_vatan_requests'] =
             'eval' => ['tl_class' => 'w50'],
             'sql' => [
                 'type' => 'integer',
-                'default' => null,
+                'unsigned' => true,
+                'default' => 0,
             ],
         ],
         'priority' => [
@@ -172,7 +172,7 @@ $GLOBALS['TL_DCA']['tl_vatan_requests'] =
             'sql' => [
                 'type' => 'string',
                 'length' => 255,
-                'default' => null,
+                'default' => '',
             ],
         ],
     ],

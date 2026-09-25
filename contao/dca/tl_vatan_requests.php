@@ -47,7 +47,7 @@ $GLOBALS['TL_DCA']['tl_vatan_requests'] =
 
     // Palettes
     'palettes' => [
-        'default' => '{name_legend},name,phone;{datetime_legend},date,time,referer,priority;{message_legend},subject,order,message;{cultivation_legend},cultivation,irrigation,cultivatedarea,unit;',
+        'default' => '{name_legend},name,phone;{datetime_legend},date,time,referer,priority;{message_legend},subject,message;{cultivation_legend},cultivation,irrigation,cultivatedarea,unit;',
     ],
 
     // Fields
@@ -132,15 +132,6 @@ $GLOBALS['TL_DCA']['tl_vatan_requests'] =
             ],
         ],
         'subject' => [
-            'inputType' => 'text',
-            'eval' => ['tl_class' => 'w50'],
-            'sql' => [
-                'type' => 'string',
-                'length' => 255,
-                'default' => null,
-            ],
-        ],
-        'order' => [
             'inputType' => 'text',
             'eval' => ['tl_class' => 'w50'],
             'sql' => [
